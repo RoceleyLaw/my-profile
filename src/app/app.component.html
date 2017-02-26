@@ -1,3 +1,19 @@
-<h1>
-  {{title}}
-</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>navigation-bar</title>
+  </head>
+  <body>
+    <ul>
+      <nav>
+        <li><a routerLink="/splash-page">Home</a></li>
+        <li><a routerLink="/main-page">Main!</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </nav>
+      <router-outlet></router-outlet>
+    </ul>
+  </body>
+</html>

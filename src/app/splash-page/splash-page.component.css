@@ -1,0 +1,13 @@
+
+.jumbotron.full-screen {
+  height: 100vh;
+}
+
+.bg-blue-rose {
+  background-color: #333333;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  color:white;
+  text-shadow: #949B9D;
+}
