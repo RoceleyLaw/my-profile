@@ -1,13 +1,18 @@
-
-.jumbotron.full-screen {
-  height: 100vh;
+.full-screen {
+  height: 100vw;
 }
 
-.bg-blue-rose {
-  background-color: #333333;
+.center {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-rose {
+  background-image: url('../../assets/blue-rose.jpg');
   background-position: center;
-  background-repeat: none;
   background-size: cover;
-  color:white;
-  text-shadow: #949B9D;
+  color: white;
+  font-family: Arial;
 }

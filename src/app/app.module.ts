@@ -20,6 +20,11 @@ import { SplashPageComponent } from './splash-page/splash-page.component';
     HttpModule,
     RouterModule.forRoot([
       {
+        path: '',
+        redirectTo: '/splash-page',
+        pathMatch: 'full'
+      },
+      {
         path: 'main-page',
         component: MainPageComponent
       },
