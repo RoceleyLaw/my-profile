@@ -1,5 +1,10 @@
+h3 {
+  padding-bottom: 1em;
+}
+
 .full-screen {
-  height: 100vw;
+  height: 100vh;
+  width: 100vw;
 }
 
 .center {
@@ -10,9 +15,37 @@
 }
 
 .bg-rose {
-  background-image: url('../../assets/blue-rose.jpg');
   background-position: center;
   background-size: cover;
+  background-color: #24272E;
   color: white;
   font-family: Arial;
+  background-attachment: fixed;
+}
+.display-mid
+{
+  position:absolute;
+  top:40%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%)}
+
+.animate-top{
+  position:relative;
+  -webkit-animation:
+  animatetop 0.8s;
+  animation:animatetop 0.8s}
+
+@-webkit-keyframes animatetop{
+  from{top:-300px;opacity:0} to{top:0;opacity:1}
+}
+@keyframes animatetop{
+  from{top:-300px;opacity:0} to{top:0;opacity:1}
+}
+
+.border-grey {
+  border-top: solid white;
+  margin: auto;
+  padding-bottom: 5vh;
+  width: 40vw;
 }
