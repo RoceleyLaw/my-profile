@@ -6,13 +6,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { SplashPageComponent } from './splash-page/splash-page.component';
+import { DatePickerComponent } from './date-picker/date-picker.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
-    SplashPageComponent
+    SplashPageComponent,
+    DatePickerComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,10 @@ import { SplashPageComponent } from './splash-page/splash-page.component';
       {
         path: 'splash-page',
         component: SplashPageComponent
+      },
+      {
+        path: 'date-picker',
+        component: DatePickerComponent
       }
     ])
   ],
