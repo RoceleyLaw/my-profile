@@ -11,6 +11,8 @@ a {
 ol {
   padding: 0 40px;
   margin: 0;
+  height: 100vh !important;
+  overflow-y: scroll !important;
 
   @media screen and (max-width : 768px) {
     box-sizing: border-box;

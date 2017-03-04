@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { SplashPageComponent } from './splash-page/splash-page.component';
 import { HackerNewsPageComponent } from './hacker-news-page/hacker-news-page.component';
+import { HackerNewsItemComponent } from './hacker-news-item/hacker-news-item.component';
+
+import { HackerNewsApiService } from './hacker-news-api.service';
 
 
 @NgModule({
@@ -14,7 +17,8 @@ import { HackerNewsPageComponent } from './hacker-news-page/hacker-news-page.com
     AppComponent,
     MainPageComponent,
     SplashPageComponent,
-    HackerNewsPageComponent
+    HackerNewsPageComponent,
+    HackerNewsItemComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,7 @@ import { HackerNewsPageComponent } from './hacker-news-page/hacker-news-page.com
       }
     ])
   ],
-  providers: [],
+  providers: [HackerNewsApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
