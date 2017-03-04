@@ -6,13 +6,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { SplashPageComponent } from './splash-page/splash-page.component';
+import { HackerNewsPageComponent } from './hacker-news-page/hacker-news-page.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
-    SplashPageComponent
+    SplashPageComponent,
+    HackerNewsPageComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +33,10 @@ import { SplashPageComponent } from './splash-page/splash-page.component';
       {
         path: 'splash-page',
         component: SplashPageComponent
+      },
+      {
+        path:'hacker-news-page',
+        component: HackerNewsPageComponent
       }
     ])
   ],
