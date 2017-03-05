@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>login-page</title>
+  </head>
+  <body>
+    <div class="login jumbotron center-block full-screen">
+      <h1>Login</h1>
+      <form role="form" (submit)="login($event, username.value, password.value)">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" #username class="form-control" id="username" placeholder="Username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" #password class="form-control" id="password" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+        <a [routerLink]="['/signup']">Click here to Signup</a>
+    </form>
+    </div>
+  </body>
+</html>

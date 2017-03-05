@@ -22,24 +22,26 @@ h3 {
   font-family: Arial;
   background-attachment: fixed;
 }
+
 .display-mid
 {
-  position:absolute;
-  top:40%;
+  position:relative;
+  top:30%;
   left:50%;
   transform:translate(-50%,-50%);
   -ms-transform:translate(-50%,-50%)}
 
-.animate-top{
+.animate-top {
   position:relative;
   -webkit-animation:
   animatetop 0.8s;
   animation:animatetop 0.8s}
 
-@-webkit-keyframes animatetop{
+@-webkit-keyframes animatetop {
   from{top:-300px;opacity:0} to{top:0;opacity:1}
 }
-@keyframes animatetop{
+
+@keyframes animatetop {
   from{top:-300px;opacity:0} to{top:0;opacity:1}
 }
 

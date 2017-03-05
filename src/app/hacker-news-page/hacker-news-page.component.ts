@@ -10,6 +10,7 @@ import { HackerNewsApiService } from '../hacker-news-api.service';
 })
 export class HackerNewsPageComponent implements OnInit {
   public items: any;
+
   constructor(private _hackerNewsAPIService: HackerNewsApiService) {
   }
 

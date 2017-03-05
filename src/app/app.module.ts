@@ -10,6 +10,7 @@ import { HackerNewsPageComponent } from './hacker-news-page/hacker-news-page.com
 import { HackerNewsItemComponent } from './hacker-news-item/hacker-news-item.component';
 
 import { HackerNewsApiService } from './hacker-news-api.service';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { HackerNewsApiService } from './hacker-news-api.service';
     MainPageComponent,
     SplashPageComponent,
     HackerNewsPageComponent,
-    HackerNewsItemComponent
+    HackerNewsItemComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,10 @@ import { HackerNewsApiService } from './hacker-news-api.service';
         path: '',
         redirectTo: '/splash-page',
         pathMatch: 'full'
+      },
+      {
+        path: 'login-page',
+        component: LoginComponent
       },
       {
         path: 'main-page',

@@ -16,7 +16,7 @@ export class HackerNewsApiService {
     return this.http.get(`${this.baseUrl}/topstories.json`)
                     .map(response => response.json());
                   }
-
+  //fetch the item from the http API and map it into JSON format
   fetchItem(id: number): Observable<any> {
     return this.http.get(`${this.baseUrl}/item/${id}.json`)
                   .map(response => response.json());
